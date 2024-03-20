@@ -1,0 +1,46 @@
+.best-deal {
+    background-color: #fafafa;
+    padding-top: 100px;
+}
+.info {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    /* margin-left: 60px; */
+}
+
+.info-text {
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.116);
+    padding-bottom: 30px;
+}
+
+.info-text h4 {
+    margin-left: 20px;
+}
+
+.apartment-container span {
+    background-color: #f0b9a8;
+    border-radius: 5px;
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+.apartment-container p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #4a4a4a;
+}
+.link-best {
+    background-color: #9e9c9c1f;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    margin: 0 -12px;
+    padding: 0 20px;
+}
+.link-best h6 {
+    color: orangered;
+}
+.img-flude {
+    max-width: 100%;
+    height: auto;
+}
+

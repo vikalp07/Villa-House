@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="css/Contact.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Property-Details.css">
+  <link rel="stylesheet" href="css/style-co.css">
+  <link rel="stylesheet" href="css/property.css">
+
+  <title>villa</title>
+</head>
+
+<body>
+  <!-- ------- Sub Header ------------->
+  <div class="sub-header d-none d-lg-block">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-8 col-mg-8 my-auto">
+          <ul class="gap-4 mb-0">
+            <li class="list-unstyled">
+              <i class="fa fa-envelope me-2"></i>
+              info@company.com
+            </li>
+            <li class="list-unstyled">
+              <i class="fa fa-map me-2"></i>
+              Sunny Isles Beach, FL 33160
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 my-auto">
+          <div class="social-icon">
+            <div class="d-flex align-items-center justify-content-end">
+              <ul class="d-flex justify-content-end mb-0">
+                <li class="list-unstyled"><a href="#" class="btn"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-unstyled"><a href="#" class="btn"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-unstyled"><a href="#" class="btn"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-unstyled"><a href="#" class="btn"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------- main header --------------->
+  <div class="header header-sticky background-header">
+ <div class=" container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+      <a href="index.html" class="navbar-brand p-0">
+        <img src="Images/logo.png" alt="logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+        <ul class="navbar-nav py-0 gap-lg-5 m-4 ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="property.html" class="nav-link">Properties</a></li>
+          <li class="nav-item active"><a href="Property-Details.html" class="nav-link active" style="color: #f35525;">Property
+              Details</a></li>
+          <li class="nav-item"><a href="Contact-Us.html" class="nav-link">Contact Us</a></li>
+          <li class="nav-item"><a href="#" class="btn btn-dark rounded-pill text-white p-0 pe-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                class="fa fa-calendar visit-icon"></i> Schedule a visit</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </div>
+
+<!-- Modal -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact Form</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="contact-form" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name..."
+                      autocomplete="on" required="">
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Your E-mail..."
+                      required="">
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject..."
+                      autocomplete="on">
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" id="message" class="form-control" placeholder="Your Message"
+                      rows="4"></textarea>
+                  </div>
+                  <div class="col-lg-12 mt-2">
+                    <button type="submit" id="form-submit" class="btn btn-dark">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ------- Banner --------------- -->
+  <div class="contect-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 contact-banner-text">
+          <span class="breadcrumb">HOME / SINGLE PROPERTY</span>
+          <h3>SINGLE PROPERTY</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------- Proparty Details ------------- -->
+  <div class="proparty-details section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mb-5">
+          <div class="img-proparty">
+            <img src="Images/single-property.jpg" alt="single-property" class="img-flude">
+          </div>
+
+          <div class="apartment-container">
+            <span class="fw-bold mt-4 ">Appartment</span>
+            <h4 class="my-4 fw-bold">24 New Street Miami, OR 24560</h4>
+            <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template
+              for your company website. TemplateMo provides you the
+              <strong class="text-primary cursor-pointer ">best free CSS templates</strong>
+              in the world. Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch
+              tumblr yr succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
+
+              <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search engine website.
+              In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate Layouts, etc. Master cleanse
+              +1
+              intelligentsia swag post-ironic, slow-carb chambray knausgaard PBR&amp;B DSA poutine neutra cardigan
+              hoodie pop-up.
+            </p>
+          </div>
+
+          <div class="useful-links px-2">
+            <div class="container-flude px-2">
+              <div class="row link-best">
+                <h6 class="my-auto p-0 py-2">Best useful links ?</h6>
+              </div>
+              <div class="link-best">
+                <p>
+                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor kinfolk
+                  tonx seitan
+                  crucifix 3 wolf moon bicycle rights keffiyeh snackwave wolf same vice, chillwave vexillologist
+                  incididunt ut
+                  labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                <h6 class="text-dark">How does this works ?</h6>
+                </p>
+              </div>
+              <div class="link-best border-0">
+                <h6 class="text-dark py-2">Why is villa the best ?</h6>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="ms-5">
+              <div class="list-unstyled info-text py-4">
+                <img src="Images/info-icon-01.png" alt="info-icon">
+                <h4>450 m2<br><span>Total Flat Space</span></h4>
+              </div>
+              <div class="list-unstyled info-text mb-5 mt-3">
+                <img src="Images/info-icon-02.png" alt="info-icon">
+                <h4>Contract<br><span>Contract Ready</span></h4>
+              </div>
+              <div class="list-unstyled info-text mb-5 mt-3">
+                <img src="Images/info-icon-03.png" alt="info-icon">
+                <h4>Payment<br><span>Payment Process</span></h4>
+              </div>
+              <div class="list-unstyled info-text border-0 pb-4">
+                <img src="Images/info-icon-04.png" alt="info-icon">
+                <h4>Safety<br><span>24/7 Under Control</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- ------------- Best Deal ------------- -->
+    <div class="section best-deal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-heading">
+              <h6 class="text-danger mb-4">| Best Deal</h6>
+              <h2 class="fw-bold">Find Your Best Deal Right Now!</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="tabs-content">
+              <div class="row">
+                <div class="nav-wrapper">
+                  <ul class="nav justify-content-end mb-5 mt-2 buton-colors best-nav" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active btn  active mx-2 bg-dark text-white" id="appartment-tab" data-bs-toggle="tab"
+                        data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment"
+                        aria-selected="true">Appartment</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link btn  mx-2 bg-dark text-white" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa"
+                        type="button" role="tab" aria-controls="villa" aria-selected="false" tabindex="-1">Villa
+                        House</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link btn  mx-2 bg-dark text-white" id="penthouse-tab" data-bs-toggle="tab"
+                        data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse"
+                        aria-selected="false" tabindex="-1">Penthouse</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="info ms-0 mb-5">
+                          <div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Total Flat Space</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">540 m2</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Floor number</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">3</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Number of rooms</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">8</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Parking Available</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">Yes</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Payment Process</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">Bank</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="images/deal-01.jpg" alt="Deal" class="img-fluid">
+                      </div>
+                      <div class="col-lg-3">
+                        <h4>Extra Info About Property</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut
+                          labore et dolore magna aliqua quised ipsum suspendisse.
+                          <br><br>When you need free CSS templates, you can simply type TemplateMo in any search engine
+                          website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.
+                        </p>
+                        <div class="icon-button mt-5">
+                          <a href="#" class="btn btn-dark rounded-pill text-white p-0 pe-3"><i
+                              class="fa fa-calendar visit-icon"></i>
+                            Schedule a visit</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="info ms-0 mb-5">
+                          <div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Total Flat Space</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">540 m2</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Floor number</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">3</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Number of rooms</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">8</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Parking Available</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">Yes</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Payment Process</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">Bank</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="images/deal-02.jpg" alt="Deal" class="img-fluid">
+                      </div>
+                      <div class="col-lg-3">
+                        <h4>Detail Info About Villa</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut
+                          labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee.
+                          JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo
+                          after messenger poutine next level humblebrag swag franzen.</p>
+                        <div class="icon-button mt-5">
+                          <a href="#" class="btn btn-dark rounded-pill text-white p-0 pe-3"><i
+                              class="fa fa-calendar visit-icon"></i>
+                            Schedule a visit</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="penthouse-tab">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="info ms-0 mb-5">
+                          <div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Total Flat Space</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">540 m2</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Floor number</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">3</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Number of rooms</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">8</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Parking Available</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">Yes</span>
+                            </div>
+                            <div class="list-unstyled info-text py-4 d-flex justify-content-between align-items-center">
+                              <h6 class="text-muted ms-3">Payment Process</h6>
+                              <span class="fs-5 text-dark fw-bold me-5">Bank</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="images/deal-03.jpg" alt="Deal" class="img-fluid">
+                      </div>
+                      <div class="col-lg-3">
+                        <h4>Extra Info About Penthouse</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut
+                          labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee.
+                          JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo
+                          after messenger poutine next level humblebrag swag franzen.</p>
+                        <div class="icon-button mt-5">
+                          <a href="#" class="btn btn-dark rounded-pill text-white p-0 pe-3">
+                            <i class="fa fa-calendar visit-icon"></i>
+                            Schedule a visit</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------- Footer --------------->
+    <!-- Footer -->
+<footer class="footer bg-dark text-white py-3">
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <p class="m-0">Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: TemplateMo</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
