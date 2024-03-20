@@ -163,7 +163,7 @@
 
 .videoview{
     height: 400px;
-    background: url(/Assets/Images/video-bg.jpg);
+    background: url(Images/video-bg.jpg);
    }
 
 .smallheading{
@@ -260,7 +260,7 @@
 /* Get In Touch */
 
 .contact-section {
-    background-image: url(/assets/images/contact-bg.jpg);
+    background-image: url(images/contact-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
